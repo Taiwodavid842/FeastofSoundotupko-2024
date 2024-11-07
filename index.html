@@ -912,17 +912,16 @@ const shareUrl =" https://www.linkedin.com/shareArticle?url=`${url}`";
       
       
       function shareWhatsApp(){
-      Html2canvas(document.getElementById("board")).then((canvas)=>{
-        canvas.toBlob((blob)=>{
-        const FormData = new FormData();
-        formData.append('image',bolb);
-        
       
-const shareUrl =" https://wa.me/?text=Check%20this%20out!&image=`${imageDataURL}`";
+        const url = encodeURIComponent(window.location.href);
+      
+const shareUrl =" https://wa.me/?text=Check%20this%20out!$`{www.was.me}`";
        window.open(shareUrl,'_blank');
-      });
-      });
-    }
+      }
+      
+    
+     
+    
         
         
         let UserNames = [];
