@@ -30,7 +30,7 @@
   padding: 0;
   font-family: 'Poppins',sans serif;
   transition: all .5s;
-  background-color: #747474;
+  background-color: #e6e6e6d1;
 }
 
 header{
@@ -39,7 +39,7 @@ header{
   width: fit-content;
   padding: 10px;
   position: ;
-  background-color: #a2a2a2;
+  background-color: #e6e6e6d1 ;
 }
 
 header .logo-hold{
@@ -145,7 +145,7 @@ header .img-hold{
 }
   
   .body-post{
-  background:#cfcfcf;
+  background: #e6e6e6d1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,7 +183,7 @@ header .img-hold{
   border-radius: 5px;
   font-size: 18px;
   transition: all .4s;  
-  color: white;
+  color: #503514;
 }
 
 .share-btn button:hover{
@@ -432,23 +432,32 @@ header .img-hold{
         
         #board {
             position: relative;
+            width: 100%;
+            height: ;
         }
         #displayImage {
-            position: absolute;
+            position: relative;
+            top:4%;
+            left:6%;
+            bottom: 2%;
+            width: 89%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: contain;
             cursor: move;
-            z-index: 1;
+            z-index:1 ;
             overflow: hidden;
         }
         #ina {
             position: absolute;
-            top: 19%;
-            left: 11.5%;
-            width: 81px;
-            height: 98px;
+            top: 17%;
+            left: 9.5%;
+            width: 93px;
+            height: 120px;
             border: 3px solid #654b2a;
             border-radius: 20%;
-            z-index: ;
-            overflow: ;
+            z-index: 2;
+            overflow: hidden;
         }
         input{
         display: flex;
@@ -464,23 +473,23 @@ header .img-hold{
         
      
         #userNames-display{
-            position: absolute;
+            position:absolute ;
             margin-bottom: 30px;
             width: 200px;
             padding: 10px;
-            margin: 0 auto; 
+            margin: ; 
             bottom: 0;
             margin-top: 4px;
             text-align: center;
-            left: 45%;
-            top: 78%;
+           margin-left: 48%;
+            top: 140%;
             font-size: ;
             transform: translateX(-50px);
             position: ;
         }
         #userNames-display p{
             color:#bf9540;
-            font-size: 15px;
+            font-size: 16px;
             font-weight: bold;
             position: absolute; 
             font-weigh: bold;
@@ -501,7 +510,7 @@ header .img-hold{
     
     .group3 .content {
         padding-top:0 ;
-        background-color: #9c9c9ce1 ;
+        background-color: #e6e6e6d1 ;
         width: 100%;
         height: 100%;
         display: flex;
@@ -573,7 +582,7 @@ header .img-hold{
        }
        #hours{
        margin-left: 35px;
-       color: white;
+       color: #601008;
        margin-bottom: 0;
            font-size: 30px;
            border-radius: 5px;
@@ -584,7 +593,7 @@ header .img-hold{
        margin-left: 8px;
        background: ;
        font-size: 30px;
-       color: white;
+       color: #601008;
            
        }
       #seconds{
@@ -592,7 +601,7 @@ header .img-hold{
           margin-right: 20px;
        background: ;
        font-size: 30px;
-       color: white;
+       color: #601008;
        
       }
       
@@ -601,7 +610,7 @@ header .img-hold{
        background: ;
        font-size: 30px;
        border-radius: 5px;
-       color:white;
+       color: #601008 ;
       }
     
     #D{
@@ -653,7 +662,7 @@ header .img-hold{
     </div>
   </div>
   
-  <div style="background: #b4b4b4" class="body-group">
+  <div style="background: #e6e6e6d1 " class="body-group">
     <div class="group">
     <h1 style="color: #b8903d">EDIFICE INT'L NETWORK -I WILLING TO BE ATTENDING</h1>
     
@@ -702,10 +711,11 @@ header .img-hold{
     <div id="board" style="margin-top:10px">
         <img id="flyer-download" src="HEADSHOT1.jpg" alt="Flier" style = 'margin: "auto"; padding-buttom: "70px" height:350px; width:320px; border-radius: 0%; display: flex; margin: 0 auto'>
         <div id="ina">
-            <img id="displayImage" src="" alt="" height=" " style="max-width: ; position: ; border-radius:20%; top: 4%; left: 8%; bottom: 9%; right: 9%; object-fit: cover; z-index:1; over-flow: hidden" height="auto" width="83%" >
-            <div id="userNames-display"></div>
+            <img id="displayImage" src="">
+            
          </div>
         </div>
+    <div id="userNames-display"></div>
        </div>
    
    <br><br>
@@ -792,10 +802,10 @@ header .img-hold{
           
           
      <div class="comment-group">
-      <h3 style="color: white">Comment (<span id="comments-count-display">30</span>)</h3>
+      <h3 style="color: #601008">Comment (<span id="comments-count-display">30</span>)</h3>
       
       <div class="comment-hold">
-        <p style="color: white"> Enter Your Comments <font>*</font></p>
+        <p style="color: #601008"> Enter Your Comments <font>*</font></p>
         <textarea id="comment-input" name="message"></textarea>
         <button style="background: #601008" id="post-comment-btn"><i class="fa fa-paper-plane" >Post Comment</i></button>
       </div>
@@ -858,8 +868,8 @@ header .img-hold{
   </button>
   </div>
     </div>
-    <div class="author">
-    <p>Powered By <img src="logo.jpg" height="30px;"> Edifice</p>
+    <div style=" background-color: #707070d1"class="author">
+    <p >Powered By <img src="logo.jpg" height="30px;"> Edifice</p>
   </div>
   </section>
   
