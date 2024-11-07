@@ -231,7 +231,7 @@ header .img-hold{
   padding: 8px;
   width: 60%;
   background-color: #ba2f2f;
-  border: none;
+  border: none; 
   color: white;
   border-radius: 6px;
   font-size: 17px;
@@ -913,15 +913,16 @@ const shareUrl =" https://www.linkedin.com/shareArticle?url=`${url}`";
       
       function shareWhatsApp(){
       Html2canvas(document.getElementById("board")).then((canvas)=>{
-        canvas.toDataURL("Image/png");
+        canvas.toBlob((blob)=>{
+        const FormData = new FormData();
+        formData.append('image',bolb);
+        
       
 const shareUrl =" https://wa.me/?text=Check%20this%20out!&image=`${imageDataURL}`";
        window.open(shareUrl,'_blank');
       });
-      }
-      
-      
-  
+      });
+    }
         
         
         let UserNames = [];
@@ -1118,11 +1119,6 @@ const days = Math.floor(timeLeft / (24*60*60*1000));
     function padZero(value){
         return(value < 10 ? '0':"") + value;
     }
-    
-    
-     
-     
-     
     </script>
     
     
