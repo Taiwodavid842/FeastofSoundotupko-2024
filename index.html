@@ -30,7 +30,7 @@
   padding: 0;
   font-family: 'Poppins',sans serif;
   transition: all .5s;
-  background-color: #e6e6e6d1;
+  background-color: White;
 }
 
 header{
@@ -39,7 +39,7 @@ header{
   width: fit-content;
   padding: 10px;
   position: ;
-  background-color: #e6e6e6d1 ;
+  background-color:white ;
 }
 
 header .logo-hold{
@@ -90,7 +90,7 @@ header .img-hold{
   width: 700px;
   display: block;
   margin: auto;
-  border: 1px solid #503800  ;
+  border: 2px solid gainsboro  ;
   margin-top: 40px;
   padding-bottom: 20px;
 }
@@ -145,12 +145,12 @@ header .img-hold{
 }
   
   .body-post{
-  background: #e6e6e6d1;
+  background: white ;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  border: 1px solid #2a2a2a;
+  border: 1px solid gainsboro;
   border-left: none;
   border-right: none;
 }
@@ -160,19 +160,19 @@ header .img-hold{
   align-items: center;
   justify-content: center;
   margin-left: 18px;
-  color: #601008;
+  color: black ;
   font-size: 11px;
 }
 
 .post-hold h3{
   margin: 0px 3px;
   
-  color:#601008;
+  color: black ;
 }
 
 .share-hold{
   padding: 10px;
-  color: #601008;
+  color: black;
 }
 
 
@@ -183,7 +183,7 @@ header .img-hold{
   border-radius: 5px;
   font-size: 18px;
   transition: all .4s;  
-  color: #503514;
+  color: black ;
 }
 
 .share-btn button:hover{
@@ -191,20 +191,20 @@ header .img-hold{
 }
 
 .share-btn .btn1{
-  border: 2px solid #601008;
+  border: 2px solid  darkblue;
 }
 
 .share-btn .btn2{
-  border: 2px solid #601008;
+  border: 2px solid skyblue;
 }
 
 .share-btn .btn3{
-  border: 2px solid #601008;
+  border: 2px solid blue;
 }
 
 
 .share-btn .btn4{
-  border: 2px solid #601008;
+  border: 2px solid green;
 }
 
 .flyer-hold{
@@ -219,7 +219,7 @@ header .img-hold{
 .next-hold{
   width: 85%;
   margin: auto;
-  background-color:  #ba2f2f;
+  background-color:  lavenderblush;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,7 +231,7 @@ header .img-hold{
 .next-hold button{
   padding: 8px;
   width: 60%;
-  background-color: #ba2f2f;
+  background-color: deeppink;
   border: none; 
   color: white;
   border-radius: 6px;
@@ -267,8 +267,8 @@ header .img-hold{
   height: 70px;
   padding: 5px;
   border: none;
-  background-color: #601008;
-  color: white;
+  background-color: gainsboro;
+  color: black;
   display: block;
   font-size: 18px;
 }
@@ -277,7 +277,7 @@ header .img-hold{
   padding: 10px;
   margin-top: 20px;
   color: white;
-  background-color: #601008;
+  background-color: white;
   color: White;
   border: none;
   font-weight: bold;
@@ -294,7 +294,7 @@ header .img-hold{
 
 .review-hold{
   margin: 20px 0px;
-  border-bottom: 1px solid  #601008;
+  border-bottom: 1px solid  ;
   transition: all .4s;
   margin-left: 25px;
 }
@@ -334,7 +334,7 @@ header .img-hold{
   padding: 10px;
   font-size: 18px;
   width: 80%;
-  background-color: #601008;
+  background-color: deeppink ;
   border: none;
   border-radius: 8px;
   color: white;
@@ -359,7 +359,7 @@ header .img-hold{
   height: 60px;
   width: 60px;
   border: none;
-  color: #601008; ;
+  color: deeppink ;
   
   border-radius: 50%;
   font-size: 24px;
@@ -371,10 +371,10 @@ header .img-hold{
 
    input[type="text"]{
    width:;
-   color: white;
+   color: black ;
   display: block;
   padding: 10px;
-  background-color: #601008;
+  background-color: gainsboro ;
   border: none;
   font-size: 17px;
   border-radius: 4px;
@@ -388,7 +388,7 @@ header .img-hold{
    color: white;
   display: block;
   padding: 10px;
-  background-color: #601008;
+  background-color: white;
   border: none;
   font-size: 17px;
   border-radius: 4px;
@@ -400,7 +400,7 @@ header .img-hold{
   input[type="button"]{
   padding: 8px;
   width: 60%;
-  background-color: #601008 ;
+  background-color: deeppink ;
   color: white;
   border-radius: 6px;
   font-size: 17px;
@@ -411,7 +411,7 @@ header .img-hold{
   #dl-png{
   padding: 8px;
   width: 60%;
-  background-color: #601008;
+  background-color: deeppink ;
   border: none;
   color: white;
   border-radius: 6px;
@@ -449,12 +449,72 @@ header .img-hold{
             z-index:1 ;
             overflow: hidden;
         }
+          @media (max-width: 768px){
+         #displayImage{
+            width: 85%;
+            left: 7.5%;
+         }
+         #ina{
+          width:80%;
+          height:100%;
+          left: 8%;
+         }
+        }
+         
+      
+    
+         @media (max-width: 480px){
+         #displayImage{
+            width: 80%;
+            left: 10%;
+         }
+         #ina{
+          width:60%;
+          left:10%;
+          height: 80%;
+         }
+        }
+         
+         @media (max-width: 320px){
+         #displayImage{
+            width: 75%;
+            left: 12.5%;
+         }
+         #ina{
+          width:50%;
+          left: 12.5;
+          height:60%;
+         }
+        }
+         @media (max-width: 480px){
+        #userNames-display{
+            width: 80%;
+            font-size:12px;
+         }
+        }
+         @media (max-width: 768px){
+         #displayImage{
+            width: 85%;
+            left: 7.5%;
+         }
+         #ina{
+          width:80%;
+          left:10%;
+         }
+        }
+         @media (max-width: 480px){
+        #userNames-display{
+            width: 80%;
+            font-size:12px;
+         }
+        }
+        
         #ina {
             position: absolute;
             top: 17%;
             left: 9.5%;
-            width: 93px;
-            height: 120px;
+            width: 95px;
+            height: 123px;
             border: 3px solid #654b2a;
             border-radius: 20%;
             z-index: 2;
@@ -482,7 +542,7 @@ header .img-hold{
             bottom: 0;
             margin-top: 2px;
             text-align: center;
-           left: 50%;
+           left: 29%;
             top: 9% ;
             font-size: 16px ;
             transform: translateX(-50px);
@@ -497,6 +557,19 @@ header .img-hold{
             font-weigh: bold;
             margin: 0:
             padding: 0;
+        }
+        
+        @media (max-width: 768px){
+        #userNames-display{
+            width: 60%;
+            font-size:14px;
+         }
+        }
+         @media (max-width: 480px){
+        #userNames-display{
+            width: 80%;
+            font-size:12px;
+         }
         }
         
         #comment-input{
@@ -515,7 +588,7 @@ header .img-hold{
     
     .group3 .content {
         padding-top:0 ;
-        background-color: #e6e6e6d1 ;
+        background-color: white ;
         width: 100%;
         height: 100%;
         display: flex;
@@ -535,7 +608,7 @@ header .img-hold{
     
     @keyframes color {
         25% {
-            color: #601008;
+            color: deeppink;
         }
         45% {
             color: white;
@@ -543,7 +616,7 @@ header .img-hold{
          }
     
     .group3 .p1 {
-         color:  #601008 ;
+         color:  black ;
         text-align: center;
         font-size: 25px;
         margin-top: 0;
@@ -583,11 +656,11 @@ header .img-hold{
        .time-hol p{
            margin-left: 29px;
            padding: ;
-           color: #601008;
+           color: black;
        }
        #hours{
        margin-left: 35px;
-       color: #601008;
+       color: black;
        margin-bottom: 0;
            font-size: 30px;
            border-radius: 5px;
@@ -598,7 +671,7 @@ header .img-hold{
        margin-left: 8px;
        background: ;
        font-size: 30px;
-       color: #601008;
+       color: black;
            
        }
       #seconds{
@@ -606,7 +679,7 @@ header .img-hold{
           margin-right: 20px;
        background: ;
        font-size: 30px;
-       color: #601008;
+       color: black;
        
       }
       
@@ -615,7 +688,7 @@ header .img-hold{
        background: ;
        font-size: 30px;
        border-radius: 5px;
-       color: #601008 ;
+       color: black ;
       }
     
     #D{
@@ -654,7 +727,7 @@ header .img-hold{
     <div class="img-hold">
       <img src="logo.jpg" width="100%" >
     </div>
-      <h1 style="color:#734c0a ">Edifice International Network</h1>
+      <h1 style="color: black ">Edifice International Network</h1>
     </div>
   </header>
   
@@ -662,20 +735,20 @@ header .img-hold{
   <div class="body-img">
     <div class="img-content">
       <div class="img-text">
-      <h1 style="color: #b8903d">EDIFICE INT'L NETWORK -I WILLING TO BE ATTENDING</h1>
+      <h1 style="color: white ">EDIFICE INT'L NETWORK -I WILLING TO BE ATTENDING</h1>
         </div>
     </div>
   </div>
   
-  <div style="background: #e6e6e6d1 " class="body-group">
+  <div style="background: White " class="body-group">
     <div class="group">
-    <h1 style="color: #b8903d">EDIFICE INT'L NETWORK -I WILLING TO BE ATTENDING</h1>
+    <h1 style="color: black">EDIFICE INT'L NETWORK -I WILLING TO BE ATTENDING</h1>
     
     <div class="body-title>
       <button class="title-logo"></button>
       <div class="title-text">
- <marquee>    <h3 style="color: #b8903d"> edifice International Network</h3>
-      <p style="color: #b8903d; font-size: 20px" class="C-Date" id="currentDate">19-07-2023</p></marquee> 
+ <marquee>    <h3 style="color: black "> edifice International Network</h3>
+      <p style="color: black ; font-size: 20px" class="C-Date" id="currentDate">19-07-2023</p></marquee> 
       </div>
     </div>
     </div>
@@ -726,7 +799,7 @@ header .img-hold{
    
    <br><br>
   
-    <div class="group3" style="background-color: ">
+    <div class="group3" style="background-color:; ">
         
         <div class="content">
             <div class="content-text">
@@ -778,7 +851,7 @@ header .img-hold{
             
     
         
-    <form id = "reg-form" method = "POST" action = "" > 
+    <form id = "reg-form" method = "POST" action = "" >
         
        
         <h3> </h3>   
@@ -787,7 +860,7 @@ header .img-hold{
         
           <input type="text" id="sname" placeholder="second name" name="sname" required><br><br>
           <div style="position: relative;">  
-              <input type="file" accept="image/jpeg, image/PNG, image/jpg"  id="imageInput" style="position: absolute; opacity: 0; z-index: -1;"> <label for="imageInput" style="cursor: pointer padding : 10px; border: 1px solid #ccc; background-color:#601008;  margin-left: 0;padding: 8px; width: 60%;border: none;color: white; border-radius: 6px; font-size: 17px;transition: all .4s;">upload image </label>
+              <input type="file" accept="image/jpeg, image/PNG, image/jpg"  id="imageInput" style="position: absolute; opacity: 0; z-index: -1;"> <label for="imageInput" style="cursor: pointer padding : 10px; border: 1px solid #ccc; background-color:deeppink;  margin-left: 0;padding: 8px; width: 60%;border: none;color: white; border-radius: 6px; font-size: 17px;transition: all .4s;">upload image </label>
          </div> 
             
             <br>
@@ -808,12 +881,12 @@ header .img-hold{
           
           
      <div class="comment-group">
-      <h3 style="color: #601008">Comment (<span id="comments-count-display">30</span>)</h3>
+      <h3 style="color: black">Comment (<span id="comments-count-display">30</span>)</h3>
       
       <div class="comment-hold">
-        <p style="color: #601008"> Enter Your Comments <font>*</font></p>
-        <textarea id="comment-input" name="message"></textarea>
-        <button style="background: #601008" id="post-comment-btn"><i class="fa fa-paper-plane" >Post Comment</i></button>
+        <p style="color: black"> Enter Your Comments <font>*</font></p>
+        <textarea id="comment-input" name="message" required></textarea>
+        <button style="background: deeppink " id="post-comment-btn"><i class="fa fa-paper-plane" >Post Comment</i></button>
       </div>
      <div id="comment-container"> 
      </div>
@@ -874,7 +947,7 @@ header .img-hold{
   </button>
   </div>
     </div>
-    <div style=" background-color: #707070d1"class="author">
+    <div style=" background-color: gainsboro " class="author">
     <p >Powered By <img src="logo.jpg" height="30px;"> Edifice</p>
   </div>
   </section>
@@ -949,10 +1022,13 @@ document.getElementById("sname").value;
 
 const fullName = `${firstName} ${lastName}`;
 
-     UserNames.push(fullName);
+     UserNames =[fullName];
+     
      displayUserNames();
- }
-     );
+ localStorage.setItem('userNames',
+     JSON.stringify(UserNames));
+     });
+     
         
    function displayUserNames(){
        const userNamesElement = document.getElementById("userNames-display");
@@ -1043,9 +1119,9 @@ function updateEntriesCount(){
       <div class="review">
         <div class="review-btn">
           <button></button>
-          <p style="color: #601008" class="days">${new Date().toLocaleTimeString()}</p>
+          <p style="color: deeppink" class="days">${new Date().toLocaleTimeString()}</p>
         </div>
-        <h4 class="name" style="margin-left:0px; color: #601008; font-size: 17px" >YOU</h4>
+        <h4 class="name" style="margin-left:0px; color: deeppink ; font-size: 17px" >YOU</h4>
          </div>
         <p style="color: #000000 ">${commentText.trim().replace(/</g,'&lt;').replace(/>/g,'&gt;')}</p>
       </div>
