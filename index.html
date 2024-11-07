@@ -434,6 +434,7 @@ header .img-hold{
             position: relative;
             width: 100%;
             height: ;
+            margin-top: 10px;
         }
         #displayImage {
             position: relative;
@@ -474,26 +475,30 @@ header .img-hold{
      
         #userNames-display{
             position:absolute ;
-            margin-bottom: 30px;
-            width: 200px;
+          
+            width: 40% ;
             padding: 10px;
             margin: ; 
             bottom: 0;
-            margin-top: 4px;
+            margin-top: 2px;
             text-align: center;
-           margin-left: 48%;
-            top: 140%;
-            font-size: ;
+           left: 48%;
+            top: 9% ;
+            font-size: 16px ;
             transform: translateX(-50px);
             position: ;
+            z-index:1;
         }
         #userNames-display p{
             color:#bf9540;
             font-size: 16px;
             font-weight: bold;
-            position: absolute; 
+            position: ; 
             font-weigh: bold;
+            margin: 0:
+            padding: 0;
         }
+        
         #comment-input{
             margin-left: 0px;
         }
@@ -714,8 +719,9 @@ header .img-hold{
             <img id="displayImage" src="">
             
          </div>
+          <div id="userNames-display"></div>
         </div>
-    <div id="userNames-display"></div>
+   
        </div>
    
    <br><br>
@@ -1037,11 +1043,11 @@ function updateEntriesCount(){
       <div class="review">
         <div class="review-btn">
           <button></button>
-          <p style="color: white" class="days">${new Date().toLocaleTimeString()}</p>
+          <p style="color: #601008" class="days">${new Date().toLocaleTimeString()}</p>
         </div>
-        <h4 class="name" style="margin-left:0px; color: white; font-size: 17px" >YOU</h4>
+        <h4 class="name" style="margin-left:0px; color: #601008; font-size: 17px" >YOU</h4>
          </div>
-        <p style="color: white">${commentText.trim().replace(/</g,'&lt;').replace(/>/g,'&gt;')}</p>
+        <p style="color: #000000 ">${commentText.trim().replace(/</g,'&lt;').replace(/>/g,'&gt;')}</p>
       </div>
       `;
    const commentsContainer = document.getElementById("comment-container");
