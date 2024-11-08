@@ -433,93 +433,52 @@ header .img-hold{
         #board {
             position: relative;
             width: 100%;
-            height: ;
+            height: auto ;
             margin-top: 10px;
         }
+        
         #displayImage {
-            position: relative;
-            top:4%;
-            left:6%;
-            bottom: 2%;
-            width: 89%;
-            height: auto;
-            border-radius: 10px;
-            object-fit: contain;
+            position: absolute;
+            top:0%;
+            left: 0%;
+            right: 0%;
+            bottom: 0%;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
             cursor: move;
-            z-index:1 ;
+            z-index: 1;
             overflow: hidden;
+            display: none;
         }
-          @media (max-width: 768px){
-         #displayImage{
-            width: 85%;
-            left: 7.5%;
-         }
-         #ina{
-          width:80%;
-          height:100%;
-          left: 8%;
-         }
-        }
-         
-      
-    
-         @media (max-width: 480px){
-         #displayImage{
-            width: 80%;
-            left: 10%;
-         }
-         #ina{
-          width:60%;
-          left:10%;
-          height: 80%;
-         }
-        }
-         
-         @media (max-width: 320px){
-         #displayImage{
-            width: 75%;
-            left: 12.5%;
-         }
-         #ina{
-          width:50%;
-          left: 12.5;
-          height:60%;
-         }
-        }
-         @media (max-width: 480px){
-        #userNames-display{
-            width: 80%;
-            font-size:12px;
-         }
-        }
-         @media (max-width: 768px){
-         #displayImage{
-            width: 85%;
-            left: 7.5%;
-         }
-         #ina{
-          width:80%;
-          left:10%;
-         }
-        }
-         @media (max-width: 480px){
-        #userNames-display{
-            width: 80%;
-            font-size:12px;
-         }
-        }
+          
         
         #ina {
             position: absolute;
-            top: 17%;
-            left: 9.5%;
-            width: 95px;
-            height: 123px;
+            top: 13% !important;
+            left: 9.5% !important;
+            width: 30% !important;
+            height: 40% !important;
             border: 3px solid #654b2a;
             border-radius: 20%;
             z-index: 2;
             overflow: hidden;
         }
+        :root{
+            --ina-width:30%;
+            --ina-top: 13%;
+            --ina-left: 9.5%;
+            --ina-height: 40%;
+        }
+        @media (max-width:767px){
+            #ina{
+       width: var(--ina-width-mobile);
+       height: var(--ina-height-mobile);
+       left: var(--ina-left-mobile);
+       top: var(--ina-top-mobile) ;
+            }
+            
         input{
         display: flex;
         margin:0 auto;
@@ -536,14 +495,14 @@ header .img-hold{
         #userNames-display{
             position:absolute ;
           
-            width: 40% ;
-            padding: 10px;
+            width:  ;
+            padding: 10px !important;
             margin: ; 
             bottom: 0;
             margin-top: 2px;
             text-align: center;
-           left: 29%;
-            top: 9% ;
+            left: 3% !important;
+            top: 45% !important;
             font-size: 16px ;
             transform: translateX(-50px);
             position: ;
@@ -558,29 +517,94 @@ header .img-hold{
             margin: 0:
             padding: 0;
         }
+    
         
-        @media (max-width: 768px){
-        #userNames-display{
-            width: 60%;
-            font-size:14px;
-         }
+        :root{
+         --userNames-display-top: 45%;
+         --userNames-display-left: 3%;
+         --userNames-display-padding: 10px;
+           
         }
-         @media (max-width: 480px){
-        #userNames-display{
-            width: 80%;
-            font-size:12px;
-         }
+        
+         @media (max-width:767px){
+            #userName-display{
+       
+ top: var(--userName-display-top-mobile);
+left: var(--userName-display-left-mobile); padding: var(--userName-display-padding-mobile); 
+            }
+        
+        
+        
+        
+        
+        @media (max-width:767px){
+            #ina{
+              width: 60%;
+              height :70%;
+              left:20%;
+              top:15%;
+            }
+            #userNames-display{
+              width: 70%;
+             
+              left: 15%;
+              top: 50%;
+              font-size:14%;
+            }
+            #board {
+                margin-top: 20px;
+            }
         }
+      
+      @media(min-width:768px) and (max-width: 1023px){
+            #ina{
+              width: 40%;
+              height : 50%;
+              left:30%;
+              top:20%;
+            }
+            #userNames-display{
+              width: 50%;       
+              left: 25%;
+              top: 45%;
+              font-size:16%;
+            }
+            
+        }
+      
+      @media (min-width:1023px){
+            #ina{
+              width: 30%;
+              height : 40%;
+              left:9.5%;
+              top: 13%;
+            }
+            #userNames-display{
+              width: 40%;       
+              left: 17%;
+              top: 45%;
+              font-size:16%;
+            }
+            
+        }
+      
+      
+      
+      
+      
+        
+        
+        
         
         #comment-input{
-            margin-left: 0px;
-        }
-   #770a0a9a
+            margin-left: 
+   #770a0a9a;
+   }
         .group3 {
-        background-color:;
+        background-color: ;
         background-repeat: no-repeat;
         background-size: cover;
-        margin-top: 80px;
+        margin-top: 0px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -708,9 +732,44 @@ header .img-hold{
         font-size: ;
     }
     
-    
+    #main-content{
+        position: relative;
+        z-index: 800;
+        display: none;
+        border: none;
+    }
    
-          
+     #custome-alert{
+         position: fixed;
+         top: 50%;
+         left: 50%;
+         width: 70%;
+         transform: translate(-50%,-50%);
+         background-color: white;
+         border: 1px solid gainsboro;
+         padding: 20px;
+         z-index: 1000;
+      box-shadow:0 0 10px rgba(0,0,0,0.5);
+     }
+     #close-btn{
+         background-color: deeppink;
+         color: white;
+         padding: 10px 20px;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+     }
+     
+     #mode-overlay{
+         position: fixed;
+         top: 0;
+         left:0;
+         widt:100%;
+         height:100%;
+         background-color:black;
+         z-index:900;
+         display: none;
+     }
     </style>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
@@ -719,8 +778,16 @@ header .img-hold{
         </script>
     
 </head>
-<body>
    <body>
+       
+       <div id="custome-alert" style="display:none">
+      <h2>welcome, dear brethren!</h2>
+      <p>please Enter the shorter versions of your first and second name!</p>
+      <button id="close-btn">okay</button>
+  </div>
+  
+       <div id="modal-overlay"></div>
+        <div id="main-content"> 
   <!-- HEADER SECTION -->
   <header>
     <div class="logo-hold">
@@ -950,12 +1017,30 @@ header .img-hold{
     <div style=" background-color: gainsboro " class="author">
     <p >Powered By <img src="logo.jpg" height="30px;"> Edifice</p>
   </div>
-  </section>
   
+  </section>
+  </div>
+  
+  
+  
+    
+    
     
 
     <script>
         "use strict"
+     document.getElementById("close-btn").addEventListener("click", function(){
+         document.getElementById("custome-alert").style.display = "none";
+         document.getElementById("modal-overlay").style.display = "none"; document.getElementById("main-content").style.display = "block";
+   
+   }); document.getElementById("modal-overlay").style.display="block"; document.getElementById("custome-alert").style.display="block";
+     setTimeout(function(){
+     document.getElementById("modal-overlay").style.display = "none"; 
+     document.getElementById("custome-alert").style.display="none";              document.getElementById("main-content").style.display="block";
+     },30000);
+        
+        
+        
         
   const currentDateElement = document.getElementById("currentDate");
   const currentDate = new Date();
@@ -1212,7 +1297,8 @@ const days = Math.floor(timeLeft / (24*60*60*1000));
         return(value < 10 ? '0':"") + value;
     }
     </script>
-    
+    </body>
+    </html>
     
     
     
