@@ -138,10 +138,13 @@ header .img-hold{
 }
 
 .title-text{
-  margin: 0px 10px;
+overflow: hidden;
+  margin: ;
+  margin-bottom:19px;
 }
 .title-text p{
   margin-top: -13px;
+  margin-bottom:19px;
 }
   
   .body-post{
@@ -439,20 +442,33 @@ header .img-hold{
         
         #displayImage {
             position: absolute;
-            top:0%;
-            left: 0%;
-            right: 0%;
-            bottom: 0%;
-            width: 100%;
-            height: 100%;
-            border-radius: 20px;
-            object-fit: cover;
+            top:0%! important;
+            left: 0%! important;
+            right: 0%! important;
+            bottom: 0%! important;
+            width: 100%! important;
+            height: 100% !important;
+            border-radius: 20px !important;
+            object-fit: cover !important;
             cursor: move;
             z-index: 1;
-            overflow: hidden;
+            overflow: hidden !important;
             display: none;
         }
-          
+          :root{
+        --displayImage-top:0%;
+        --displayImage-right:0%;
+        --displayImage-width:100%;
+        --displayImage-height:100%;
+          }
+           @media (max-width:767px){
+            #displayImage{
+  width: var(--displayImage-width-mobile);
+  height: var(--displayImage-height-mobile);
+  left: var(--displayImage-left-mobile);
+  top: var(--displayImage-top-mobile) ;
+            }
+            
         
         #ina {
             position: absolute;
@@ -661,7 +677,7 @@ left: var(--userName-display-left-mobile); padding: var(--userName-display-paddi
     
       .time-hol{
      display: inline-block;
-        margin: ;
+        margin: 0;
         text-alig: center;
       }
       
@@ -683,45 +699,50 @@ left: var(--userName-display-left-mobile); padding: var(--userName-display-paddi
            color: black;
        }
        #hours{
-       margin-left: 35px;
+       padding:0;
+       margin-left: 20px;
        color: black;
-       margin-bottom: 0;
+       margin-top: 0;
            font-size: 30px;
            border-radius: 5px;
+           background: #ff159327 ;
        }
        
        #days{
+       margin-top: 20px;
        border-radius: 5px;
-       margin-left: 8px;
-       background: ;
+       margin-left: 33px;
+       background: #ff159327 ;
        font-size: 30px;
        color: black;
            
        }
       #seconds{
       border-radius: 5px;
-          margin-right: 20px;
-       background: ;
+          margin-right: 18px;
+       background: #ff159327;
        font-size: 30px;
        color: black;
-       
+       margin-top: 20px;
       }
       
       #minutes{
-          margin-left: 38px;
-       background: ;
+      margin-top: 20px;
+          margin-left: 24px;
+       background: #ff159327 ;
        font-size: 30px;
        border-radius: 5px;
        color: black ;
       }
     
     #D{
-        Margin-Left: 20px;
+        Margin-Left: 34px;
     }
     
     #H{
         font-size: 13px;
         font-weight: 2px;
+        Margin-Left: 24px;
     }
     
     #M{
@@ -770,6 +791,34 @@ left: var(--userName-display-left-mobile); padding: var(--userName-display-paddi
          z-index:900;
          display: none;
      }
+     .marquee {
+     position: relative;
+         width:100%;
+         
+         white-space:nowrap;
+         margin-top:0;
+         margin:0;
+     }
+     .marquee-content {
+     
+     position: absolute;
+    margin:;
+         top:0;
+         left:100%;
+         font-size: 15px;
+         white-space:nowrap;
+         animation: marquee-move 4s linear infinite;
+         }
+     @keyframes marquee-move{
+        0%{
+             transform: translateX(0);
+             
+         }
+         100%{
+             transform: translateX(-150%);
+             
+         }
+     }
     </style>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
@@ -813,13 +862,16 @@ left: var(--userName-display-left-mobile); padding: var(--userName-display-paddi
     
     <div class="body-title>
       <button class="title-logo"></button>
-      <div class="title-text">
- <marquee>    <h3 style="color: black "> edifice International Network</h3>
-      <p style="color: black ; font-size: 20px" class="C-Date" id="currentDate">19-07-2023</p></marquee> 
-      </div>
+      
+     <div class="marquee"> 
+      <div class="marquee-content"> 
+     <div class="title-text">
+   <h3 style="color: black "> edifice International Network</h3>
+       <p style="color: black ; font-size: 15px" class="C-Date" id="currentDate">19-07-2023</p></div></div>
+      </div> 
     </div>
-    </div>
-    
+   </div>
+    <br><br><br>
     <div class="post-group">
     <div class="body-post">
       <div class="post-hold">
